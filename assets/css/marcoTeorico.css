@@ -1,0 +1,107 @@
+* {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: black;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    nav {
+      background-color: #3b3737;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav li {
+      margin-bottom: 0.5rem;
+    }
+
+    nav h2{
+        color: #fcfcff;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fcfcff;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      scroll-margin-top: 100px;
+    }
+
+    section h2 {
+      color: #4a47a3;
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ffffff;
+      box-shadow: 0 -1px 5px rgba(0,0,0,0.05);
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+        gap: 2rem;
+      }
+
+      nav {
+        flex: 1;
+        position: sticky;
+        top: 90px;
+        height: fit-content;
+      }
+
+      main {
+        flex: 3;
+      }
+    }
